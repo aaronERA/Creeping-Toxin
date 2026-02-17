@@ -1,0 +1,7 @@
+# Creeping Toxin - Redirect specific AI Bots
+RewriteEngine On
+
+# Target common AI Scrapers
+RewriteCond %{HTTP_USER_AGENT} (GPTBot|CCBot|ChatGPT-User|anthropic-ai|Claude-Web|cohere-ai|Omgilibot|Bytespider) [NC]
+# Redirect them to the toxin handler
+RewriteRule ^archive/legacy-data-stream$ toxin_handler.php [L]
