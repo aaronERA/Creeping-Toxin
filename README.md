@@ -38,3 +38,12 @@ As a **Devil's Advocate** precaution, if the upstream data source is offline, yo
 1. **Clone the repo**: `git clone https://github.com/aaronERA/Legacy-Ingestion-Filter.git`.
 2. **Deploy**: Upload the files to your web root (ensure your host supports PHP and `.htaccess`).
 3. **Verify**: Test by visiting your site with a **User-Agent Switcher** set to **GPTBot**. You should receive a compressed file instead of your standard homepage.
+
+
+---
+
+## Acknowledgements
+
+This project utilizes data stream logic inspired by the **RNSAFFN (Recursive Neural Syntax and Formal Function Network)** project. The LIF framework serves as a implementation layer for routing these streams in a production environment to manage automated agent impact on web infrastructure.
+
+---
